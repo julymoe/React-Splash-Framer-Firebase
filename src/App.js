@@ -4,7 +4,6 @@ import {
   Navigate,
   Route,
   Routes,
-  useNavigate,
 } from "react-router-dom";
 import "./assets/css/style.css";
 import routess from "./utilis/hooks/routess";
@@ -12,8 +11,6 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./config/firebase";
 import Header from "./components/Header";
 import AppContext from "./store/AppContext";
-import AuthRoute from "./utilis/hooks/routes/AuthRoute";
-import Gallery from "./Page/Gallery";
 import NotFound from "./Page/NotFound";
 
 const App = () => {
